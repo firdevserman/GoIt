@@ -1,0 +1,16 @@
+  158  git add .
+  159  git commit -m "main_test.txt dosyası ekleklendi"
+  160  git checkout -b develop
+  161  touch develop_test.txt
+  162  git add .
+  163  git commit -m "develop_test.txt dosyası eklendi"
+  164  echo "bu dosya develop branchindedir" >> develop_test.txt
+  165  git status
+  166  git add develop_test.txt
+  167  git commit -m "develop_test.txt dosyası güncellendi"
+  168  git status
+  169  git checkout main
+  170  git merge develop
+  171  git log --online
+  172  git log --oneline
+  173  git push
